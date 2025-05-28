@@ -21,9 +21,9 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
   const { bun, ingredients } = constructorItems;
 
   return (
-    <section className={styles.burger_constructor}>
+    <section className={styles.burger_constructor} data-cy='burger-constructor'>
       {bun ? (
-        <div className={`${styles.element} mb-4 mr-4`}>
+        <div className={`${styles.element} mb-4 mr-4`} data-cy='burger-constructor-base'>
           <ConstructorElement
             type='top'
             isLocked

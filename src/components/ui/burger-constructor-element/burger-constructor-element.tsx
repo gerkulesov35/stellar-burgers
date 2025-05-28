@@ -16,7 +16,7 @@ export const BurgerConstructorElementUI: FC<BurgerConstructorElementUIProps> = m
     const isLast = index === totalItems - 1;
 
     return (
-      <li className={`${styles.element} mb-4 mr-2`}>
+      <li className={`${styles.element} mb-4 mr-2`} data-cy='constructor-item'>
         <MoveButton
           handleMoveUp={handleMoveUp}
           handleMoveDown={handleMoveDown}
